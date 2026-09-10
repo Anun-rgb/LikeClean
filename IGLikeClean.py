@@ -62,7 +62,7 @@ def delete_batch():
     buttons = driver.find_elements(By.TAG_NAME, "button")
 
     for button in buttons:
-        if button.text.strip() in ["Unlike", "Delete", "Remove", "Yes", "OK", "はい"]:
+        if button.text.strip() in ["Unlike", "Delete", "Remove", "Yes"]:
             button.click()
             break
 
