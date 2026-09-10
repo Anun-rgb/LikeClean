@@ -19,7 +19,7 @@ A simple Selenium tool to bulk unlike liked Instagram posts and reels.
 ## Installation
 
 ```bash
-git clone https://github.com/USERNAME/LikeClean.git
+git clone https://github.com/Anun-rgb/LikeClean
 cd LikeClean
 pip install selenium==4.49.0
 ```
