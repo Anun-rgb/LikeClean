@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,9 +9,8 @@ options = Options()
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 
-service = Service(executable_path=r'D:\GIT\IGliked_delete\chromedriver-win64\chromedriver-win64\chromedriver.exe')
-driver = webdriver.Chrome(service=service, options=options)
-wait = WebDriverWait(driver, 10)
+driver = webdriver.Chrome(options=options)
+wait = WebDriverWait(driver, 8)
 
 
 def delete_batch():
